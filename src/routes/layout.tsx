@@ -13,8 +13,8 @@ export const updateScale = () => {
     pendingUpdate = false;
     const root = document.querySelector(':root') as HTMLElement | null
     if (root === null) return;
-    root.style.setProperty('--vw', `${window.innerWidth * 0.01}px`);
-    root.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+    root.style.setProperty('--vw', `${window.visualViewport!.width * 0.01}px`);
+    root.style.setProperty('--vh', `${window.visualViewport!.height * 0.01}px`);
   });
 };
 

@@ -28,36 +28,33 @@
   width: 100%;
   height: 100%;
   background-color: white;
-  mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  mask-position: center;
+  mask-repeat: no-repeat;
   -webkit-mask-position: center;
-  mask-size: calc(100% * var(--icon-scale));
+  mask-position: center;
   -webkit-mask-size: calc(100% * var(--icon-scale));
+  mask-size: calc(100% * var(--icon-scale));
 }
 
 .icon.certificate {
   --icon-scale: 0.7;
-  mask-position: 55% 60%;
   -webkit-mask-position: 55% 60%;
-  mask: url("/images/achieve/certificate.svg");
+  mask-position: 55% 60%;
   -webkit-mask-image: url("/images/achieve/certificate.svg");
+  mask-image: url("/images/achieve/certificate.svg");
 }
 
 .icon.work {
   --icon-scale: 0.6;
-  mask-position: 50% 42.5%;
   -webkit-mask-position: 50% 42.5%;
-  mask: url("/images/achieve/work.svg");
+  mask-position: 50% 42.5%;
   -webkit-mask-image: url("/images/achieve/work.svg");
+  mask-image: url("/images/achieve/work.svg");
 }
 
 .icon.more {
-  /* --icon-scale: 0.6;
-  mask-position: 50% 42.5%;
-  -webkit-mask-position: 50% 42.5%; */
-  mask: url("/images/achieve/more.svg");
   -webkit-mask-image: url("/images/achieve/more.svg");
+  mask-image: url("/images/achieve/more.svg");
 }
 
 .achieve-date {
