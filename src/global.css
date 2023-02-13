@@ -28,35 +28,15 @@
 }
 
 body {
+  --bg-offset: calc((var(--vw, 1vw) - 1vw) * 50);
   background-image: url("/images/code bg.png");
   background-repeat: no-repeat;
-  background-position: left 50% top -400px;
+  background-position: left calc(50% + var(--bg-offset)) top -400px;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   padding: 10px 10px 20px 10px;
   min-width: 600px;
   box-sizing: border-box;
   margin: 0;
-}
-
-.bg-cover {
-  position: fixed;
-  z-index: -100;
-  top: 0;
-  left: 0;
-  width: calc(var(--vw, 1vw) * 100);
-  height: calc(var(--vh, 1vh) * 100);
-  background-color: var(--page-bg);
-  opacity: 0.8;
-}
-
-.bg-header-cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: calc(var(--vw, 1vw) * 100);
-  height: calc(var(--vh, 1vh) * 100);
-  z-index: -99;
-  background: radial-gradient(350px at left 50% top 100px, var(--page-bg) 0%, var(--page-bg) 80%, transparent 100%);
 }
 
 main {
