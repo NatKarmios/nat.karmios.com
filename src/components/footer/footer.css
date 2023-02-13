@@ -1,0 +1,24 @@
+footer {
+  padding: 15px;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+  gap: 5px;
+}
+
+footer vbar {
+  margin: 0 5px;
+  height: 1.5em;
+  width: 1px;
+  background-color: #ccc;
+}
+
+footer :global(.social) {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 100%;
+}

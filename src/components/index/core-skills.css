@@ -1,0 +1,44 @@
+.skill {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.skill:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.skill:nth-child(even) .skill-content {
+  text-align: right;
+}
+
+.skill-bar {
+  width: 3px;
+  align-self: stretch;
+  background: linear-gradient(180deg, var(--light-blue) 0%, var(--dark-purple) 100%);
+}
+
+.skill-img {
+  width: 64px;
+  height: 64px;
+  background-size: cover;
+}
+
+.skill-content {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+h2 {
+  color: var(--dark-purple);
+  margin: 0;
+  padding: 0;
+}
+
+space {
+  display: block;
+  height: 5px;
+}

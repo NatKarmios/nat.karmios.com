@@ -1,0 +1,12 @@
+.name {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.name .nat {
+  font-weight: 250;
+}
+
+.name .karmios {
+  font-weight: 450;
+}

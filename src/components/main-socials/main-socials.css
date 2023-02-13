@@ -1,0 +1,61 @@
+main-socials {
+  height: 80px;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 0;
+  margin: 0 auto;
+  --border-thickness: 3px;
+  --border-bg: var(--light-blue);
+  --border-highlight: var(--dark-purple);
+  --icon-bg: var(--light-blue);
+  --icon-highlight: var(--dark-purple);
+}
+
+main-socials :global(.social) {
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--light-blue) 0%, var(--dark-blue) 100%);
+  border-radius: 100%;
+  box-shadow: 0px 0px 30px 0px white;
+}
+
+main-socials :global(.social-inner) {
+  background: radial-gradient(
+    400px circle at var(--mouse-x) var(--mouse-y), 
+    var(--border-highlight),
+    var(--border-bg) 40%
+  );
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+main-socials:hover :global(.social-inner) {
+  opacity: 1;
+}
+
+main-socials :global(.social-content) {
+  background-color: var(--page-bg);
+}
+
+main-socials :global(.icon) {
+  background: linear-gradient(180deg, var(--light-blue) 0%, var(--dark-blue) 100%);
+}
+
+main-socials :global(.icon-overlay) {
+  background: radial-gradient(
+    200px circle at var(--mouse-x) var(--mouse-y), 
+    var(--icon-highlight),
+    var(--icon-bg) 40%
+  );
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+main-socials :global(.social:hover .icon-overlay) {
+  opacity: 1;
+}

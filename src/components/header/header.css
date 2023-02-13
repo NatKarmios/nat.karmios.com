@@ -1,0 +1,62 @@
+header {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  margin: 20px auto;
+}
+
+.pfp-border {
+  width: 128px;
+  height: 128px;
+  background: linear-gradient(140deg, var(--light-blue) 0%, var(--dark-purple) 100%);
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+
+.pfp-gradient {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: red;
+  background: radial-gradient(
+    400px circle at var(--mouse-x) var(--mouse-y), 
+    var(--dark-purple),
+    var(--light-blue) 40%
+  );
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.pfp-border:hover .pfp-gradient {
+  opacity: 1;
+}
+
+.pfp {
+  position: relative;
+  top: calc(-100% + 3px);
+  left: 3px;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  border-radius: inherit;
+  background-image: url("/images/scotland.jpg");
+  background-size: cover;
+}
+
+header :global(.name) {
+  font-size: 2.5rem;
+}
+
+.pronouns {
+  font-style: italic;
+  letter-spacing: 0.01em;
+  margin-left: 0.5em;
+}
+
+.role {
+  font-size: 1.25rem;
+}
