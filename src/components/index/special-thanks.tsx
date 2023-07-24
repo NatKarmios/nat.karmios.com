@@ -1,5 +1,5 @@
-import * as urls from '../../urls';
-import A from '../a';
+import * as urls from '~/urls';
+import A from '~/components/a';
 
 export default () => (
   <>

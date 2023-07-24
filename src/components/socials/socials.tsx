@@ -1,7 +1,7 @@
 import type { JSXNode } from '@builder.io/qwik';
 import { component$, useStylesScoped$ } from '@builder.io/qwik';
 import styles from './socials.css?inline';
-import * as urls from '../../urls';
+import * as urls from '~/urls';
 
 interface SocialProps {
   title: string;

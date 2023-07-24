@@ -1,0 +1,58 @@
+.button-wrapper {
+  text-align: right;
+}
+
+.button {
+  margin-left: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: large;
+
+  --fg-color: white;
+  color: var(--fg-color);
+  background-color: var(--bg-color);
+  transition: all 0.2s
+}
+
+.button-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button icon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 0 5px;
+
+  -webkit-mask-image: var(--icon);
+  mask-image: var(--icon);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  background-color: var(--fg-color);
+  transition: all 0.2s
+}
+
+.button:hover {
+  /* --fg-color: black; */
+  background-color: var(--bg-color-hover);
+}
+
+.pdf-button {
+  --bg-color: var(--dark-blue);
+  --bg-color-hover: var(--light-blue);
+  --icon: url("/images/pubs/file.svg");
+}
+
+.doi-button {
+  --bg-color: var(--dark-purple);
+  --bg-color-hover: var(--light-purple);
+  --icon: url("/images/pubs/link.svg");
+}

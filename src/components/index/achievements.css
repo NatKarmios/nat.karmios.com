@@ -20,7 +20,11 @@
 .achieve-icon {
   width: 40px;
   height: 40px;
-  background-color: var(--timeline-color);
+  background-image: linear-gradient(
+    to bottom,
+    var(--light-blue),
+    var(--dark-blue)
+  );
   border-radius: 100%
 }
 

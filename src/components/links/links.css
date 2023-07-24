@@ -1,0 +1,29 @@
+.links {
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-light);
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--dark-purple);
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: var(--light-purple);
+}
+
+.links sep {
+  margin: 0 10px;
+  --size: 0.25em;
+  display: block;
+  width: var(--size);
+  min-width: var(--size);
+  height: var(--size);
+  border-radius: 100%;
+  background-color: black;
+}

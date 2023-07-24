@@ -1,6 +1,8 @@
-export const contactMe = '#contact-me';
+export const contactMe = '/#contact-me';
 export const cv = '/CV.pdf';
+export const publicationsBase = '/publications';
 export const github = 'https://github.com/NatKarmios';
+export const twitter = 'https://twitter.com/NatKarmios';
 export const linkedin = 'https://linkedin.com/in/natkarmios/';
 export const steam = 'https://steamcommunity.com/id/natkarmios';
 export const vtss = 'https://vtss.doc.ic.ac.uk';

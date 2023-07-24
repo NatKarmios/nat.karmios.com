@@ -1,7 +1,7 @@
-import { component$, Slot, useClientEffect$ } from '@builder.io/qwik';
+import { component$, Slot, useVisibleTask$ } from '@builder.io/qwik';
 
-import Header from '../components/header/header';
-import Footer from '../components/footer/footer';
+import Header from '~/components/header/header';
+import Footer from '~/components/footer/footer';
 
 let pendingUpdate = false;
 
@@ -23,7 +23,7 @@ export const setupUpdateScale = () => {
 }
 
 export default component$(() => {
-  useClientEffect$(setupUpdateScale);
+  useVisibleTask$(setupUpdateScale);
   return (
     <div class="body-inner">
       <Header />

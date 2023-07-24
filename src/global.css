@@ -25,6 +25,7 @@
   --border-thickness: 0px;
   --page-bg: #fafafa;
   --v-scale: 1;
+  --font-weight-light: 250;
 }
 
 body {
@@ -56,7 +57,7 @@ h2 {
   border-radius: 5px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  font-weight: 250;
+  font-weight: var(--font-weight-light);
 }
 
 h1 {

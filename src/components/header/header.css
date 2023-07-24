@@ -60,3 +60,31 @@ header :global(.name) {
 .role {
   font-size: 1.25rem;
 }
+
+.links-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.links-wrapper {
+  /* border: 1px solid var(--dark-blue);
+  border-left: none;
+  border-right: none; */
+  --gradient: linear-gradient(140deg,
+    rgba(0, 0, 0, 0) 0%,
+    var(--light-blue) 20%,
+    var(--dark-purple) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-image: var(--gradient), var(--gradient);
+  background-position:
+    center top,
+    center bottom;
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  padding: 5px 50px;
+}
