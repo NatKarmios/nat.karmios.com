@@ -1,5 +1,3 @@
-import { it } from "node:test";
-
 const dummy: PublicationData = {
   name: 'dummy',
   title: 'Dummy publication',
