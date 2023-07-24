@@ -6,6 +6,8 @@
   width: 100%;
   height: 100%;
   background-color: white;
+  -webkit-mask-image: var(--icon-src);
+  mask-image: var(--icon-src);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -39,27 +41,26 @@
   z-index: 2;
 }
 
-.social.email .icon {
-  -webkit-mask-image: url("/images/social/email.svg");
-  mask-image: url("/images/social/email.svg");
+.social.email {
+  --icon-src: url("/images/social/email.svg");
 }
 
-.social.github .icon {
-  -webkit-mask-image: url("/images/social/github.svg");
-  mask-image: url("/images/social/github.svg");
+.social.github {
+  --icon-src: url("/images/social/github.svg");
 }
 
-.social.linkedin .icon {
-  -webkit-mask-image: url("/images/social/linkedin.svg");
-  mask-image: url("/images/social/linkedin.svg");
+.social.twitter {
+  --icon-src: url("/images/social/twitter.svg");
 }
 
-.social.cv .icon {
-  -webkit-mask-image: url("/images/social/cv.svg");
-  mask-image: url("/images/social/cv.svg");
+.social.linkedin {
+  --icon-src: url("/images/social/linkedin.svg");
 }
 
-.social.steam .icon {
-  -webkit-mask-image: url("/images/social/steam.svg");
-  mask-image: url("/images/social/steam.svg");
+.social.cv {
+  --icon-src: url("/images/social/cv.svg");
+}
+
+.social.steam {
+  --icon-src: url("/images/social/steam.svg");
 }
