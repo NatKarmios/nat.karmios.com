@@ -9,12 +9,45 @@ header {
   margin: 20px auto;
 }
 
-.pfp-border {
+.header-img-container {
   width: 128px;
   height: 128px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+@keyframes pfp {
+  0%, 49%, 100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  50%, 99% {
+    opacity: 0;
+    transform: translateX(-25%);
+  }
+}
+
+@keyframes logo {
+  0%, 49%, 100% {
+    opacity: 0;
+    transform: translateX(-25%);
+  }
+  50%, 99% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.pfp-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(140deg, var(--light-blue) 0%, var(--dark-purple) 100%);
   border-radius: 100%;
   box-sizing: border-box;
+  animation: pfp 30s infinite;
 }
 
 .pfp-gradient {
@@ -32,7 +65,7 @@ header {
   transition: opacity 500ms;
 }
 
-.pfp-border:hover .pfp-gradient {
+.header-img-container:hover .pfp-gradient {
   opacity: 1;
 }
 
@@ -45,6 +78,46 @@ header {
   border-radius: inherit;
   background-image: url("/images/scotland.jpg");
   background-size: cover;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  background: black;
+  --gradient-start: 25%;
+  background: linear-gradient(180deg,
+    var(--light-blue) 0%,
+    var(--light-blue) var(--gradient-start),
+    var(--dark-purple) calc(100% - var(--gradient-start)),
+    var(--dark-purple) 100%
+  );
+  --logo-src: url("/images/logo.svg");
+  -webkit-mask-image: var(--logo-src);
+  mask-image: var(--logo-src);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  --y-offset: 17.5%;
+  -webkit-mask-position: 50% calc(50% + var(--y-offset));
+  mask-position: 50% calc(50% + var(--y-offset));
+  opacity: 0;
+  animation: logo 30s infinite;
+}
+
+.logo-gradient {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  background: radial-gradient(
+    300px circle at var(--mouse-x) var(--mouse-y), 
+    var(--dark-purple),
+    var(--light-blue) 40%
+  );
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.header-img-container:hover .logo-gradient {
+  opacity: 1;
 }
 
 header :global(.name) {

@@ -10,8 +10,12 @@
   mask-image: var(--icon-src);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
+  -webkit-mask-position:
+    calc(50% + var(--border-thickness)*0.25)
+    center;
+  mask-position:
+    calc(50% + var(--border-thickness)*0.25)
+    center;
   -webkit-mask-size: calc(100% * var(--icon-scale));
   mask-size: calc(100% * var(--icon-scale));
 }

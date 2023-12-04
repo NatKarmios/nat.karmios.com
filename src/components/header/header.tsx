@@ -4,7 +4,7 @@ import Name from '../name/name';
 import Links from '../links';
 
 export const updateMousePos = (mouseX: number, mouseY: number) => {
-  for (const border of document.querySelectorAll('.pfp-gradient') as NodeListOf<HTMLElement>) {
+  for (const border of document.querySelectorAll('.header-img-container') as NodeListOf<HTMLElement>) {
     const rect = border.getBoundingClientRect();
     const x = mouseX - rect.left;
     const y = mouseY - rect.top;
@@ -19,9 +19,14 @@ export default component$(() => {
   return (
     <>
       <header>
-        <div class="pfp-border" onMouseMove$={e => { updateMousePos(e.clientX, e.clientY)}} >
-          <div class="pfp-gradient" />
-          <div class="pfp" />
+        <div class="header-img-container" onMouseMove$={e => { updateMousePos(e.clientX, e.clientY)}}>
+          <div class="pfp-border">
+            <div class="pfp-gradient" />
+            <div class="pfp" />
+          </div>
+          <div class="logo">
+            <div class="logo-gradient" />
+          </div>
         </div>
         <div>
           <div>
