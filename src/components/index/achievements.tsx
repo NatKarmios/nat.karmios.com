@@ -11,7 +11,7 @@ interface AchieveProps {
   nodash?: boolean;
 }
 
-export const Achieve = ({ date = "", icon, children, nodash = false } : AchieveProps) => (
+export const Achieve = ({ date = "", icon, children, nodash = false }: AchieveProps) => (
   <>
     <div class="achieve-icon">
       <div class={`icon ${icon}`} />
@@ -32,30 +32,30 @@ export default component$(() => {
       <h1 id="achievements">Achievements, Experience &amp; Education</h1>
       <div class="achievements">
         <div class="achieve-grid">
-          <Achieve date="2022 - present" icon="work">Research Engineer, Imperial College London</Achieve>
+          <Achieve date="2022 - present" icon="work">Research Engineer / PhD student, Imperial College London</Achieve>
           <Achieve date="2018 - 2022" icon="certificate">
             MEng Computing, Imperial College London
-            <br/>
+            <br />
             <i><small>First class honours; transcript available upon request</small></i>
           </Achieve>
           <Achieve date="2021" icon="work">
             Software Engineer, Netcraft
-            <br/>
+            <br />
             <i><small>6-month placement</small></i>
           </Achieve>
           <Achieve date="2020" icon="work">
             Software Engineer, AFS Technologies
-            <br/>
+            <br />
             <i><small>3-month internship</small></i>
           </Achieve>
           <Achieve date="2019" icon="work">
             Software Engineer, Bossa Studios
-            <br/>
+            <br />
             <i><small>Freelance contract</small></i>
           </Achieve>
           <Achieve date="2018" icon="work">
             Software Engineer, Exceedra Software
-            <br/>
+            <br />
             <i><small>3-month internship</small></i>
           </Achieve>
           <Achieve date="2016" icon="certificate">Oracle Certified Associate, Java SE 8 Programmer</Achieve>

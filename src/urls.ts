@@ -11,3 +11,4 @@ export const gillian = 'https://github.com/GillianPlatform/Gillian';
 export const philippa = 'https://www.doc.ic.ac.uk/~pg';
 export const petar = 'https://sites.google.com/site/petarmaksimovic1981/';
 export const sacha = 'https://www.doc.ic.ac.uk/~sja3417/';
+export const nixConfig = 'https://github.com/NatKarmios/nix-config';
