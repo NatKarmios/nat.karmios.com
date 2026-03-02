@@ -7,6 +7,6 @@ interface PublicationData {
   },
   details: string,
   abstract: string,
-  filename: string,
-  doiLink: string,
+  filename?: string,
+  doiLink?: string,
 }

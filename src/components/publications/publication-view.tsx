@@ -1,4 +1,4 @@
-import type { QRL} from '@builder.io/qwik';
+import type { QRL } from '@builder.io/qwik';
 import { component$, useStyles$ } from '@builder.io/qwik';
 import styles from './publication-view.css?inline';
 import { publicationsBase } from '~/urls';
@@ -11,7 +11,7 @@ interface PublicationProps {
   onClick: QRL<() => void>;
 }
 
-const PublicationView = component$(({ data, expanded=false, onClick }: PublicationProps) => {
+const PublicationView = component$(({ data, expanded = false, onClick }: PublicationProps) => {
   useStyles$(styles);
   const { title, conference, details, abstract, filename, doiLink } = data;
   const className = expanded ? 'expanded' : '';
